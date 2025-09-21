@@ -1,0 +1,95 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Header +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+header { /* Style header */
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 130px;
+    z-index: 3;
+    background-color: rgb(50, 50, 50); 
+    justify-content: space-between;
+}
+
+header a {
+    display: inline-block;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 2vh;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.account {
+    margin-right: 2%;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Barre de menu +++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.menu {
+    height: 100%;
+    background-color: rgb(50, 50, 50); 
+}
+
+.menu ul { /* Box menu */
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    height: 100%;
+    align-items:stretch;
+    justify-content: center;
+    display: flex;
+}
+
+.menu ul li { /* Dimensions menu */
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.menu ul li a { /* Style texte menu */
+    display: block;
+    color: #ffffff;
+    font-family: Roboto;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu ul li:hover { /* Survol menu */
+    background-color: rgb(50, 50, 50); 
+    font-size: 1.2em;
+}
+
+.menu ul .sub_menu_box { /* Style sous menu */
+    display: none;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: fit-content; 
+    top: 100%; 
+    left: 0; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul .sub_menu_box li { /* Creation sous menu */
+    display: block;
+    padding: 0;
+    z-index: 3;
+    position: relative;
+}
+
+.menu ul .menu_box:hover .sub_menu_box { /* Affichage sous menu */
+    display: block;
+}
+
+.menu ul .sub_menu_box li:hover { /* Survol sous menu */
+    display: block;
+    background-color: rgb(75, 75, 75);
+    height: auto;
+    box-shadow: 2px 2px 2px rgb(16, 16, 16);
+}
+

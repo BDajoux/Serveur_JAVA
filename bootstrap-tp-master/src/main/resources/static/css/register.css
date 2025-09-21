@@ -1,0 +1,101 @@
+/* +++++++++++++++++++++++++++++++++++++++++++++++++ Formulaire +++++++++++++++++++++++++++++++++++++++++++++++++ */
+body {
+    background-color:#323232;
+}
+
+main {
+    background-color:#323232;
+}
+
+/* Style du formulaire */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+}
+
+/* Bloc nom prénom date adresse */
+.information-block { 
+    display: flex;
+    align-content: stretch;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Sous découpage du bloc de 4 */
+.information-subblock {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+/* Bloc username password */
+.important-information-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Style des champs */
+form input{
+    width: calc(100% - 10px);
+    padding : 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+
+/* Style des labels */
+form label {
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style du bouton */
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style des champs de base */
+form input {
+    border-color:  #7e7e7e;
+}
+
+form input:focus{
+    border-color:  #a9a9a9;
+}
+
+/* Supprime la bordure de focus par défaut */
+input:focus, textarea:focus {
+    outline: none; 
+}
+
+/* Affichage du message en cas d'erreur syntaxique */
+.output {
+    color: #cc0000;
+    font-style: italic;
+}

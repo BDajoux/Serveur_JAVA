@@ -1,0 +1,32 @@
+/* Style de la liste */
+.liste ul {
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer les marges internes */
+}
+
+/* Style des éléments de la liste */
+.liste li {
+    margin-bottom: 10px; /* Ajouter de l'espace entre chaque élément */
+    border: 1px solid #ccc; /* Ajouter une bordure */
+}
+
+/* Style des liens */
+.liste li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Style des paragraphes */
+.liste li p {
+    display: inline-block; /* Afficher les paragraphes sur la même ligne */
+    margin: 0; /* Supprimer les marges des paragraphes */
+    padding: 10px; /* Ajouter de l'espace intérieur aux paragraphes */
+    color: #555; /* Couleur du texte */
+}
+
+.liste {
+    margin-left: 10px;
+    margin-right: 10px;
+}
