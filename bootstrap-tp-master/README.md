@@ -2,4 +2,4 @@
 
 Vous pouvez démarrer avec la commande `./gradlew run`.
 
-+ d'infos sur https://unicorn.artheriom.fr/
+puis vous rendre sur le lien "localhost:8080"
